@@ -35,7 +35,7 @@ let embed = new Discord.MessageEmbed()
 {name:'Reason', value: reason ,inline:true},
 {name:'Date', value: `${new Intl.DateTimeFormat().format(Date.now())}`,inline:true},
 )
-
+message.reply('your report has been recorded');
 //message.channel.send(embed);
 Client.channels.cache.get('807482543226093619').send(embed);
 
