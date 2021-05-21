@@ -159,12 +159,11 @@ const prefix = '!';
         client.commands.get('rps').execute(message, args);
     }
 
-    if (command === 'ttt') {
+   
+if(command=== 'report'){
 
-
-        client.commands.get('tictactoe').execute(client,message,args);
-    }
-
+    client.commands.get('report').execute(client,message,args,Discord);
+  }
 
 
 
