@@ -12,7 +12,7 @@ message.channel.send('please select rock paper scissors for example type $exampl
 } 
 if (args[0] !=='rock' ||  args[0] !== 'paper' || args[0] !== ' scissors') {
     message.reply('please select valid move ')
-   console.log('executed')
+   
 }
 let userSelection = args[0]
 
