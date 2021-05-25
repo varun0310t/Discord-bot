@@ -38,7 +38,7 @@ module.exports = {
             message.channel.send('please use  numbers');
             return
         }
-        if (random == 'NaN ') {
+        if (random !== Number) {
 
             message.channel.send('please use  numbers');
             return
