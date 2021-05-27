@@ -10,7 +10,7 @@ if(!args[0]){
 message.channel.send('please select rock paper scissors for example type $example rps');
 
 } 
-if (args[0] !=='rock' ||  args[0] !== 'paper' || args[0] !== ' scissors') {
+if (args[0] !=='rock' &&  args[0] !== 'paper' && args[0] !== ' scissors') {
     message.reply('please select valid move ')
    
 }
