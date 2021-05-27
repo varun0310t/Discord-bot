@@ -167,7 +167,7 @@ if(command=== 'report'){
 
 if (command==="remind"){
 
-    client.commands.get('remind').execute(message.args);
+    client.commands.get('remind').execute(message,args);
 }
 
 
