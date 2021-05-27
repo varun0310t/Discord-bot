@@ -165,6 +165,10 @@ if(command=== 'report'){
     client.commands.get('report').execute(client,message,args,Discord);
   }
 
+if (command==="remind"){
+
+    client.commands.get('remind').execute(message.args);
+}
 
 
     
