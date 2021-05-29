@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({ disableEveryone: false });
 
 
-let Prefix = '#';
+const Prefix = '#';
 
 const fs = require('fs');
 
@@ -38,7 +38,7 @@ client.on('ready', () => {
 
 
 client.on('message', function (message) {
-const prefix = '!';
+
     if (message.author.bot || message.content.startsWith(Prefix)) return;
     const commandBody = message.content.slice(Prefix.length);
 
