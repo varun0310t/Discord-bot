@@ -39,7 +39,7 @@ client.on('ready', () => {
 
 client.on('message', function (message) {
 
-    if (message.author.bot || message.content.startsWith(Prefix)) return;
+    if (message.author.bot || !message.content.startsWith(Prefix)) return;
     const commandBody = message.content.slice(Prefix.length);
 
     // const incommand = message.content.tolowerCase();
