@@ -14,7 +14,7 @@ if (args[0] !=='rock' &&  args[0] !== 'paper' && args[0] !== ' scissors') {
     message.reply('please select valid move ')
    
 }
-let userSelection = args[0]
+let userSelection = args[0].toLowerCase();
 
 let lose = 0
 
