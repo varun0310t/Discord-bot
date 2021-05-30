@@ -5,7 +5,7 @@ name:'rps',
 description:'game',
 
 execute(message,args){
-let userSelection = args[0].toLowerCase();
+let userSelection = args[0].toLowerCase()
 if(!args[0]){
 message.channel.send('please select rock paper scissors for example type $example rps');
 
