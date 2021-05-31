@@ -10,17 +10,17 @@ if(!args[0]){
 message.channel.send('please select rock paper scissors for example type $example rps');
 
 } 
-if (args[0] !=='rock' &&  args[0] !== 'paper' && args[0] !== ' scissors') {
+if (userSelection!=='rock' &&  userSelection !== 'paper' && userSelection !== ' scissors') {
     message.reply('please select valid move ')
    
 }
 //let userSelection = args[0].toLowerCase();
 
-let lose = 0
 
- let wins = 0
 
- let ties = 0
+ 
+
+ 
 let rps =["rock", "paper", "scissors"]
  
 
@@ -39,13 +39,13 @@ case 'rock':{
 if(botSelection==='paper'){
     message.reply(`I won i selected ${botSelection}`);
     
-    fs.writeFileSync('data1.js',' +1',{flag:"a+"})
+    
 }
 if(botSelection==='scissors'){
 
     message.reply(`You won i selected ${botSelection}`);
     
-    fs.writeFileSync('data1.js',' -1',{flag:"a+"})
+    
 }
 
 
@@ -56,13 +56,13 @@ case 'paper':{
     if(botSelection==='rock'){
         message.reply(`You won  i selected ${botSelection}`);
         
-        fs.writeFileSync('data1.js',' -1',{flag:"a+"})
+        
     }
 
     if(botSelection==='scissors'){
         message.reply(`I won i selected ${botSelection}`);
         
-        fs.writeFileSync('data1.js',' +1',{flag:"a+"})
+        
     }
 
 }}
@@ -74,7 +74,7 @@ if(botSelection==='rock'){
 
     message.reply(`I won i selected ${botSelection}`);
     
-    fs.writeFileSync('data1.js',' +1',{flag:"a+"})
+    
 
 }
 
@@ -82,20 +82,20 @@ if(botSelection==='paper'){
     message.reply(`You won i selected ${botSelection}`);
 
     
-fs.writeFileSync('data1.js',' -1',function (err){if(err)console.log (err)},{flag:"a+"})
+
+
+}
+
+
+
+
+
+}
 
 }
 
 
 
-
-
-}
-
-}
-
-
-console.log(wins,lose,ties);
 }
 
 }
