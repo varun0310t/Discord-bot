@@ -178,16 +178,16 @@ if (command==="remind"){
     client.commands.get('remind').execute(message,args);
 }
 
-if (command=== "profile")
-{
-  client.commands.get('profile').execute(client,message ,args,Discord);  
-}
+//if (command=== "profile")
+//{
+//  client.commands.get('profile').execute(client,message ,args,Discord);  
+//}
  
 
-if (command==="wallet"){
+//if (command==="wallet"){
 
-    client.commands.get('wallet').execute(client,message,args,Discord);
-}
+  //  client.commands.get('wallet').execute(client,message,args,Discord);
+//}
 
 if (command==="notes"){
 
