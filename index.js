@@ -15,7 +15,7 @@ const fs = require('fs');
 
 const mcounter = require('./commands/counter/mcounter');
 
-const profileschema = require('../kuch bhi/commands/profileSchema');
+//const profileschema = require('../kuch bhi/commands/profileSchema');
 
 
 client.commands = new Discord.Collection();
