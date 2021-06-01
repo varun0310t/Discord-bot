@@ -68,9 +68,9 @@ client.on('message', function (message) {
     // console.log(command);
 
     //  {||} means or
-    const icmd2 = message.content;
+   
 
-    const icmd = icmd2.toLowerCase();
+    
     if (command === "ping") {
         const timeTaken = Date.now() - message.createdTimestamp;
         message.reply(`Pong! This message had a latency of ${timeTaken}ms.`);
