@@ -39,6 +39,16 @@ client.on('ready', () => {
 
 client.on('message', function (message) {
 
+    const icmd2 = message.content;
+
+    const icmd = icmd2.toLowerCase();
+
+   if (icmd === 'to mods') {
+
+        message.channel.send('<@&747854497346355303>');
+        console.log(message.member + ' pinged mods ');
+    }
+
     if (message.author.bot || !message.content.startsWith(Prefix)) return;
     const commandBody = message.content.slice(Prefix.length);
 
